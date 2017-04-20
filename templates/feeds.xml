@@ -1,15 +1,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>devRant RSS feed</title>
     <icon>
-        https://www.devrant.io/static/devrant/img/landing/landing-devrant-logo1.png
+        https://startuplister.com/wp-content/uploads/2016/03/logo-icon1.png
     </icon>
     <link type="text/html" href="https://www.devrant.io/" rel="alternate"/>
     {% for rant in rants %}
             <entry>
                 <title>{{ rant['text'][:65] ~ "...." }} </title>
-                <content> {{ rant['text'] }} </content>
+                <content type="html">
+                    <p>{{ rant['text'] }} </p>
+                </content>
                 <score>{{ rant['score'] }}</score>
-                <author>{{ rant['user_username'] }}</author>
+                <author>
+                    <name>{{ rant['user_username'] }}</name>
+                </author>
                 <comments>{{ rant['num_comments'] }}</comments>
                 {% if rant['attached_image'] %}
                     <content type="html">
