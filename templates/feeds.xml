@@ -1,0 +1,22 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>devRant RSS feed</title>
+    <icon>
+        https://www.devrant.io/static/devrant/img/landing/landing-devrant-logo1.png
+    </icon>
+    <link type="text/html" href="https://www.devrant.io/" rel="alternate"/>
+    {% for rant in rants %}
+            <entry>
+                <title>{{ rant['text'] }} </title>
+                <score>{{ rant['score'] }}</score>
+                <username>{{ rant['user_username'] }}</username>
+                <comments>{{ rant['num_comments'] }}</comments>
+                {% if rant['attached_image'] %}
+                    <content type="html">
+                        <img alt="" src="{{ rant['attached_image']['url'] }}"/>
+                    </content>
+                {% endif %}
+                <link rel="alternate" type="text/html" href="{{ 'https://www.devrant.io/rants/' ~ rant['id'] }}" />
+                <id>{{ rant['id'] }}</id>
+            </entry>
+        {% endfor %}
+</feed>
