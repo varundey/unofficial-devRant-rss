@@ -9,6 +9,8 @@
                 <title>
                     {% if rant['text']|length > 70 %}
                         {{ rant['text'][:70] ~ "...." }}
+                    {% else %}
+                        {{ rant['text'] }}
                     {% endif %}
                 </title>
                 <score>{{ rant['score'] }}</score>
