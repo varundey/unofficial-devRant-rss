@@ -6,20 +6,22 @@
     <link type="text/html" href="https://www.devrant.io/" rel="alternate"/>
     {% for rant in rants %}
             <entry>
-                <title>{{ rant['text'][:65] ~ "...." }} </title>
-                <content type="html">
-                    <p>{{ rant['text'] }} </p>
-                </content>
+                <title>
+                    {% if rant['text']|length > 70 %}
+                        {{ rant['text'][:70] ~ "...." }}
+                    {% endif %}
+                </title>
                 <score>{{ rant['score'] }}</score>
                 <author>
                     <name>{{ rant['user_username'] }}</name>
                 </author>
                 <comments>{{ rant['num_comments'] }}</comments>
-                {% if rant['attached_image'] %}
-                    <content type="html">
-                        <img alt="" src="{{ rant['attached_image']['url'] }}"/>
-                    </content>
-                {% endif %}
+                <content type="html">
+                    {% if rant['attached_image'] %}
+                        &lt;img alt="" src="{{ rant['attached_image']['url'] }}"/&gt;
+                    {% endif %}
+                    &lt;p&gt; {{ rant['text'] }} &lt;/p&gt;
+                </content>
                 <link rel="alternate" type="text/html" href="{{ 'https://www.devrant.io/rants/' ~ rant['id'] }}" />
                 <id>{{ rant['id'] }}</id>
             </entry>
