@@ -6,9 +6,10 @@
     <link type="text/html" href="https://www.devrant.io/" rel="alternate"/>
     {% for rant in rants %}
             <entry>
-                <title>{{ rant['text'] }} </title>
+                <title>{{ rant['text'][:65] ~ "...." }} </title>
+                <content> {{ rant['text'] }} </content>
                 <score>{{ rant['score'] }}</score>
-                <username>{{ rant['user_username'] }}</username>
+                <author>{{ rant['user_username'] }}</author>
                 <comments>{{ rant['num_comments'] }}</comments>
                 {% if rant['attached_image'] %}
                     <content type="html">
