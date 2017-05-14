@@ -11,7 +11,7 @@ I ++'d this rant BTW!
 ## Demo:
 I personally use Feedly because it has a [Chrome web store app](https://chrome.google.com/webstore/detail/feedly/hipbfijinpcgfogaopmgehiegacbhmob?hl=en). So you will be always up to date with the latest rants on both your phone and PC.. But use whatever floats your boat man.
 
-[![devRant RSS](https://lh5.googleusercontent.com/IWLl34L57LIDipsB0IJwNM2CHNi21hRmJkSoPnim-i8jfUVlLGjxcS4PEK_XvRGSAJIc2_7F=w2880-h1474-rw)](https://doc-08-78-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/6ifs0vnh1rlqbejh9oef7kl1n5p7v4pe/1494705600000/00624197631066680328/*/0B5hhUVFR-N9iaHY5bzJieHBmRXc?e=view)
+[![devRant RSS](https://lh5.googleusercontent.com/2fJFXlCRjH5m7FafjsvyOBZ-vEw7xedIcPZST6gzaqtdiH3_zK8AqO5iN211RXKv8z1qsA7S6q9-g8Y=w2880-h1606-rw)](https://doc-08-78-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/6ifs0vnh1rlqbejh9oef7kl1n5p7v4pe/1494705600000/00624197631066680328/*/0B5hhUVFR-N9iaHY5bzJieHBmRXc?e=view)
 
 ## Inspiration
 Call me old school but I am a big RSS fan. I use RSS for all my News/Football/Github/HackerNews/Tech update. I also built a personal facebook notifications RSS which worked great until they deprecated the permission for it. Building an RSS reader for devRant enabled me to access rants and news from one place so that I don't have to keep switching between apps.
